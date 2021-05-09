@@ -10,10 +10,13 @@ public class BankAccountApp {
 		var ch1 = new Checking("Collin Pointer", "321759087", 1000.00);
 		ch1.displayAccountInfo();
 		
-		System.out.println("\n*******************\n");
+		System.out.println("\n************************************\n");
 		
 		var sv1 = new Savings("Kyle Pointer", "890673421", 2500.00);
 		sv1.displayAccountInfo();
+		sv1.deposit(10);
+		ch1.transer(sv1, 500);
+		sv1.compound();
 	}
-	
+		
 }
